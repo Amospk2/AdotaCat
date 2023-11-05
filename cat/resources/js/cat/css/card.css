@@ -1,0 +1,62 @@
+.card {
+    width: 100%;
+    background-color: #F5F5F5;
+    margin-bottom: 20px;
+    overflow: hidden;
+    color: black;
+    border-radius: 10px;
+    border: 1px solid rgb(255, 247, 247, 0);
+    transition: scale 250ms ease, opacity 250ms linear;
+    text-align: center;
+}
+
+
+
+.card:hover .card-img {
+    height: 24vh;
+
+}
+
+.card-img {
+    height: 26vh;
+    width: 100%;
+    object-fit: cover;
+    transition: height 500ms ease;
+}
+
+.card-link {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100%;
+    margin: -4px auto;
+    padding-bottom: 10px;
+    text-decoration: none;
+    color: #4D4C7D;
+    background-color: #F5F5F5;
+    cursor: pointer;
+    transition: font-size 500ms ease;
+}
+
+.simple-card {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    min-height: 200px;
+    padding: 10px;
+    border-radius: 10px;
+    color: #F5F5F5;
+    justify-content: center;
+    
+}
+
+.color-y {
+    background-color: rgb(166, 182, 98);
+}
+
+
+.color-r {
+    background-color: rgb(211, 111, 149);
+}
+
+.color-g {
+    background-color: rgb(108, 184, 90);
+}

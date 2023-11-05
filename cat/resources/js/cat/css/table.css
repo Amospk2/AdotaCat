@@ -1,0 +1,76 @@
+@media (max-width: 980px) {
+
+    .main-banner p {
+        white-space: wrap;  
+    }
+    
+    .header {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 5px;
+    }
+
+
+    .menu {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2px;
+        justify-self: normal;
+    }
+
+
+    .alert-banner h1 {
+        font-size: 1.6rem;
+    }
+
+        
+    input[type=button] {
+        width: 100%;
+    }
+
+
+    .main {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .row {
+        grid-template-columns: 1fr;
+    }
+
+    .simple-row  {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .simple-row input[type=button],input[type=search]
+    {
+        width: 100%;
+    }
+
+    .simple-card {
+        margin-top: 10px;
+    }
+
+
+    .container {
+        grid-template-rows: 1fr;
+    }
+
+    .redes {
+        display: grid;
+        grid-template-columns: 1fr 1fr ;
+        gap: 5px 1px;
+    }
+
+    .redes input[type=button] {
+        width: 100%;
+    }
+    
+
+    .auth-card{
+        width: 500px;
+    }
+
+
+}
+
+
