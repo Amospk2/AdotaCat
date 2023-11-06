@@ -62,16 +62,7 @@ input[type=search] {
 }
 
 
-.sugestao {
-    padding-left: 10px;
-    background-color: #F5F5F5;
-    margin-bottom: -10px;
-}
 
-.sugestao-titulo {
-    color: #F99417;
-    padding: 10px;
-}
 
 
 
@@ -102,17 +93,6 @@ input[type=search] {
     min-height: 300px;
 }
 
-.sugestao {
-    padding-left: 10px;
-    background-color: #F5F5F5;
-    margin-bottom: -10px;
-}
-
-.sugestao-titulo {
-    color: #F99417;
-    padding: 10px;
-    font-size: 22px;
-}
 
 
 .redes {

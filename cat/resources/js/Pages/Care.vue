@@ -2,7 +2,7 @@
 import AlertBanner from '../Components/AlertBanner.vue';
 import Card from '../Components/Card.vue';
 import Header from '../Components/Header.vue';
-import MainBanner from '../Components/MainBanner.vue';
+import Sugestao from '../Components/Sugestao.vue';
 import SimpleCard from '../Components/SimpleCard.vue';
 
 defineProps({ user: Object, cats: Object })
@@ -12,8 +12,7 @@ defineProps({ user: Object, cats: Object })
 <template>
     <main>
         <Header />
-        <AlertBanner img="/storage/asserts/care.png" :align-end="true" 
-        title="Você pode ajuda-los!"/>
+        <AlertBanner img="/storage/asserts/care.png" :align-end="true" title="Você pode ajuda-los!" />
 
         <div class="row">
             <div class="main">
@@ -32,10 +31,7 @@ defineProps({ user: Object, cats: Object })
                 <h2>Encontre um parceiro para você!</h2>
             </div>
         </div>
-
-        <div class="sugestao">
-            <h1 class="sugestao-titulo font-xl" >Recomendações</h1>
-        </div>
+        <Sugestao />
         <div class="simple-row ">
 
             <SimpleCard card-color="color-g">
@@ -88,6 +84,4 @@ defineProps({ user: Object, cats: Object })
 </template>
 
 
-<style src="../../css/home.css">
-
-</style>
+<style src="../../css/home.css"></style>

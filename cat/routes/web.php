@@ -1,8 +1,7 @@
 <?php
 
 use App\Http\Controllers\ProfileController;
-use App\Http\Controllers\UserController;
-use Illuminate\Foundation\Application;
+use App\Http\Controllers\HomeController;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
 
@@ -17,7 +16,7 @@ use Inertia\Inertia;
 |
 */
 
-Route::get('/', [UserController::class, 'show']);
+Route::get('/', [HomeController::class, 'show']);
 
 
 Route::get('/care', function () {
@@ -28,13 +27,16 @@ Route::get('/sobre', function () {
     return Inertia::render('Sobre');
 });
 
+Route::get('/details/{id}', [HomeController::class, 'details']);
+Route::get('/care/{id}', [HomeController::class, 'care']);
+
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
 
-require __DIR__.'/auth.php';
+require __DIR__ . '/auth.php';
 
 
 /* Route::get('/', function () {
